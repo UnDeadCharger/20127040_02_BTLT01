@@ -39,6 +39,19 @@ function TodoForm(props) {
         />
         <button className="todo-button edit"> Update</button>
         </>
+        ) : props.info ?(
+        <>
+            <input 
+                type="text" 
+                placeholder="Update your info" 
+                value={input} 
+                name="text" 
+                className='todo-input'
+                onChange={handleChange}
+                ref={inputRef}
+            />
+            <button className="todo-button edit">Update Info</button>
+            </>
         ) : (
         <>
             <input 
