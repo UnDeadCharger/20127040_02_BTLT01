@@ -3,7 +3,7 @@ import TodoForm from './TodoForm';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 import { BsInfoSquare} from 'react-icons/bs';
-
+import {AiOutlineFileAdd} from 'react-icons/ai';
 const Todo = ({ todos, infos, completeTodo, removeTodo, updateTodo, updateInfo }) => {
   
   const [edit, setEdit] = useState({
@@ -65,7 +65,7 @@ const Todo = ({ todos, infos, completeTodo, removeTodo, updateTodo, updateInfo }
         {todo.text}
       </div>
       <div className='icons'>
-        <BsInfoSquare 
+        <AiOutlineFileAdd 
           onClick={() => setInfo({id: todo.id, value: "JERMACRAFT"})}
           className='info-icon'
         />
